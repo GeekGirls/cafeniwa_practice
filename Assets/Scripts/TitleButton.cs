@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
-public class tmpScript : MonoBehaviour {
+public class TitleButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -11,5 +12,9 @@ public class tmpScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	public void onClick() {
+		SceneManager.LoadScene ("main");
 	}
 }
