@@ -7,11 +7,14 @@ using System.IO;
 using System.Text;
 using System.Net;
 using System.Xml;
+using UnityEngine.UI;
 
 public class HandleHPapi : MonoBehaviour {
-
 	// Use this for initialization
 	void Start () {
+		Texture texture = Resources.Load("test_cafe") as Texture;
+		Image img = this.GetComponent<Image>();
+    img.material.mainTexture = texture;
 	}
 
 	// Update is called once per frame
