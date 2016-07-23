@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class CloseDialogue : MonoBehaviour {
+	public GameObject Dialogue;
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +15,8 @@ public class CloseDialogue : MonoBehaviour {
 	}
 
 	public void onClick () {
-		Debug.Log("Button clicked");
 		gameObject.SetActive(false);
+		DialogueScript Script = Dialogue.GetComponent<DialogueScript>() as DialogueScript;
+		Script.Reset();
 	}
 }
